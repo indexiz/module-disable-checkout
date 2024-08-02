@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="top.links">
+            <block class="Indexiz\DisableCheckout\Block\Account\Message" name="message-link" before="my-account-link" template="Indexiz_DisableCheckout::account/link/message.phtml">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Important message: Please read!</argument>
+                    <argument name="sortOrder" xsi:type="number">120</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

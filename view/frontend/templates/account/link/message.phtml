@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * @var \Indexiz\DisableCheckout\Block\Account\Message $block
+ * @var \Magento\Framework\Escaper $escaper
+ */
+?>
+<li class="link imp-message-link">
+    <a style="background-color: #F57856; color: #ffff00; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal;"
+        href="<?= $escaper->escapeUrl($block->getMessageLink()) ?>"><?= $escaper->escapeHtml($block->getLabel()) ?></a>
+</li>
